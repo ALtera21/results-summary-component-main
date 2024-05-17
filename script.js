@@ -99,13 +99,13 @@ function rating() {
         if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 30){
             document.getElementById("rating").innerHTML ="Next time will be better!";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 30){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 30 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 50){
             document.getElementById("rating").innerHTML ="You can do better";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 50){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 50 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 70){
             document.getElementById("rating").innerHTML ="Good";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 70){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 70 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 80){
             document.getElementById("rating").innerHTML ="Great";
         }
         else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 80){
@@ -129,13 +129,13 @@ function rank() {
         if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 30){
             document.getElementById("rank").innerHTML ="You scored lower than 80% of the people who have taken these tests.";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 30){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 30 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 50){
             document.getElementById("rank").innerHTML ="You scored lower than 60% of the people who have taken these tests.";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 50){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 50 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 70){
             document.getElementById("rank").innerHTML ="You scored higher than 50% of the people who have taken these tests.";
         }
-        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 70){
+        else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 70 && Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) <= 80){
             document.getElementById("rank").innerHTML ="You scored higher than 65% of the people who have taken these tests.";
         }
         else if (Math.round((reactionValue + memoryValue + verbalValue + visualValue) / 4) > 80){
