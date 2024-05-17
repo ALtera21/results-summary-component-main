@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here is the solution](https://www.frontendmentor.io/solutions/responsive-desktop-first-userinput-is-used-as-score-rather-than-json-1m5o03DPsB)
+- Live Site URL: [Live site here](https://altera21.github.io/results-summary-component-main/)
 
 ## My process
 
