@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {margin-top: 10px; margin-bottom: 10px;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="scoreBox">
+      <h3 class="result">Your Result</h3>
+      <br>
+      <div class="scoreCircle">
+        <p id="score">---</p>
+        <p class="of">of 100</p>
+      </div>
+
+      <p id="rating">?</p>
+      <p id="rank"></p>
+    </div>
+
+    <div class="whiteBox">
+      <h3 class="summary">Summary</h3>
+
+      <div id="reaction">
+        <div class="image">
+          <img src="assets\images\icon-reaction.svg" alt="reaction">
+          <p class="reaction">Reaction</p>
+        </div>
+        <div class="value">
+          <input type="number" id="reactionValue" min="0" max="100" placeholder="  ---">
+          <p class="perHundred">/ 100</p>
+        </div>
+      </div>
+
+      <div id="memory">
+        <div class="image">
+          <img src="assets\images\icon-memory.svg" alt="memory">
+          <p class="memory">Memory</p>
+        </div>
+        <div class="value">
+          <input type="number" id="memoryValue" min="0" max="100" placeholder="  ---">
+          <p class="perHundred">/ 100</p>
+        </div>
+      </div>
+
+      <div id="verbal">
+        <div class="image">
+          <img src="assets\images\icon-verbal.svg" alt="verbal">
+          <p class="verbal">Verbal</p>
+        </div>
+        <div class="value">
+          <input type="number" id="verbalValue" min="0" max="100" placeholder="  ---">
+          <p class="perHundred">/ 100</p>
+        </div>
+      </div>
+
+      <div id="visual">
+        <div class="image">
+          <img src="assets\images\icon-visual.svg" alt="visual">
+          <p class="visual">Visual</p>
+        </div>
+        <div class="value">
+          <input type="number" id="visualValue" min="0" max="100" placeholder="  ---">
+          <p class="perHundred">/ 100</p>
+        </div>
+      </div>
+
+      <button>Continue</button>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/ALtera21">notAltera</a>.
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

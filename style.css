@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'HankenBold';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HankenBoldX';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HankenMid';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    width: 600px;
+    height: 450px;
+    border-radius: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+
+
+
+
+
+.scoreBox{
+    box-sizing: border-box;
+    background-image: linear-gradient(hsl(249, 95%, 61%), hsla(256, 72%, 46%, 1));
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h3{
+    font-family: HankenBold;
+    margin-top: 30px;
+}
+
+.result{
+    color: hsl(241, 100%, 89%);
+}
+
+.scoreCircle{
+    box-sizing: border-box;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(253, 74%, 53%));
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>.scoreBox>.scoreCircle>#score{
+    font-family: HankenBoldX;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+
+.of{
+    font-family: HankenMid;
+    margin: 0;
+    color: hsl(221, 100%, 96%);
+    opacity: 50%;
+}
+
+.container>.scoreBox>#rating{
+    font-family: HankenBoldX;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#rating{
+    color: white;
+}
+
+#rank{
+    font-family: HankenMid;
+    text-align: center;
+    margin: 0;
+    color: hsl(221, 100%, 96%)
+}
+
+
+
+
+
+
+.whiteBox{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.summary{
+    align-self: self-start;
+}
+
+#reaction, #memory, #verbal, #visual{
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#reaction, #reactionValue{
+    background-color: hsl(0, 100%, 95%);
+}
+
+#memory, #memoryValue{
+    background-color: hsl(39, 100%, 95%);
+}
+
+#verbal, #verbalValue{
+    background-color: hsl(166, 100%, 95%);
+}
+
+#visual, #visualValue{
+    background-color: hsl(234, 85%, 95%);
+}
+
+img{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#reactionValue, #memoryValue, #verbalValue, #visualValue{
+    width: 40%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    font-family: HankenBoldX;
+    font-size: 20px;
+}
+
+#reactionValue:focus{
+    outline: none;
+    background-color: hsl(0, 100%, 90%);
+}
+
+#memoryValue:focus{
+    outline: none;
+    background-color: hsl(39, 100%, 90%);
+}
+
+#verbalValue:focus{
+    outline: none;
+    background-color: hsl(166, 100%, 90%);
+}
+
+#visualValue:focus{
+    outline: none;
+    background-color: hsl(234, 85%, 90%);
+}
+
+.reaction, .memory, .verbal, .visual{
+    font-family: HankenBold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.perHundred{
+    font-family: HankenBoldX;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Remove arrowKeyCombined CSS for hiding number input spinner controls across browsers */
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: none; /* Chrome, Safari, and other WebKit browsers */
+    appearance: none; /* Default */
+}
+
+/* Remove arrowKeySpecific WebKit browsers settings */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrowKey Specific IE and Edge settings */
+input[type="number"]::-ms-clear,
+input[type="number"]::-ms-expand {
+    display: none;
+}
+
+button{
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    height: 43px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsla(256, 72%, 60%, 1);
+    border: 2px solid hsla(256, 72%, 46%, 1);
+}
+
+button:active{
+    cursor: grab;
+    background-color: hsla(256, 72%, 20%, 1);
+    border: 2px solid hsla(256, 72%, 46%, 1);
+}
+
+@media(max-width: 600px){
+    body{
+        margin: 0;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .scoreBox{
+        width: 100%;
+        height: 45%;
+        border-radius: 0 0 50px 50px;
+        flex-direction: column;
+    }
+
+    h3{
+        margin-bottom: 0;
+    }
+
+    .scoreCircle{
+        height: 120px;
+        width: 120px;
+    }
+
+    .container>.scoreBox>.scoreCircle>#score{
+        font-size: 40px;
+    }
+
+    .container>.scoreBox>#rating{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .whiteBox{
+        width: 100%;
+        height: 55%;
+        border-radius: 0;
+    }
+
+    .summary{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #reaction, #memory, #verbal, #visual{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
